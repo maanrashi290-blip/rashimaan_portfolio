@@ -1,0 +1,331 @@
+
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f6f4ed;
+    color: #243c35;
+}
+
+
+/* NAVIGATION BAR */
+
+header {
+    background-color: #203b32;
+    color: white;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    font-family: Georgia, serif;
+    font-size: 27px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #e6a18c;
+}
+
+
+/* HOME SECTION */
+
+.home {
+    background-color: #dce8dc;
+    padding: 110px 12%;
+    min-height: 550px;
+}
+
+.intro {
+    color: #a45f4d;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.home h1 {
+    font-family: Georgia, serif;
+    font-size: 70px;
+    margin-bottom: 18px;
+}
+
+.home h1 span {
+    color: #a45f4d;
+}
+
+.home h3 {
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.description {
+    max-width: 700px;
+    line-height: 1.9;
+    font-size: 17px;
+}
+
+.location {
+    margin: 25px 0;
+    color: #667b6d;
+}
+
+.button {
+    display: inline-block;
+    background-color: #a45f4d;
+    color: white;
+    padding: 14px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #203b32;
+}
+
+
+/* COMMON SECTION STYLING */
+
+.section {
+    padding: 85px 12%;
+}
+
+.section-title {
+    margin-bottom: 35px;
+}
+
+.section-title p {
+    color: #a45f4d;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.section-title h2 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+}
+
+.section-title h2 span {
+    color: #a45f4d;
+}
+
+
+/* ABOUT SECTION */
+
+.about {
+    background-color: #203b32;
+    color: #f6f4ed;
+}
+
+.about-text {
+    max-width: 850px;
+}
+
+.about-text p {
+    font-size: 17px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+
+/* EDUCATION SECTION */
+
+.education {
+    background-color: #f6f4ed;
+}
+
+.education-card {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.edu-item {
+    background-color: white;
+    padding: 25px;
+    border-left: 5px solid #a45f4d;
+    border-radius: 5px;
+}
+
+.year {
+    color: #a45f4d;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.edu-item h3 {
+    font-family: Georgia, serif;
+    font-size: 23px;
+    margin: 12px 0;
+}
+
+.edu-item p {
+    color: #68746d;
+}
+
+
+/* SKILLS SECTION */
+
+.skills {
+    background-color: #e8e5d9;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    border-bottom: 4px solid #718d76;
+}
+
+.skill-card h3 {
+    color: #a45f4d;
+    margin-bottom: 12px;
+    font-family: Georgia, serif;
+}
+
+.skill-card p {
+    line-height: 1.7;
+    color: #59665e;
+}
+
+
+/* HOBBIES SECTION */
+
+.hobbies {
+    background-color: #f6f4ed;
+}
+
+.hobby-intro {
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.hobby-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.hobby-card {
+    background-color: #dce8dc;
+    padding: 30px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.hobby-card:hover {
+    transform: translateY(-5px);
+}
+
+.hobby-card h3 {
+    font-family: Georgia, serif;
+    color: #a45f4d;
+    margin-bottom: 12px;
+}
+
+.hobby-card p {
+    line-height: 1.7;
+    color: #59665e;
+}
+
+
+/* CONTACT SECTION */
+
+.contact {
+    background-color: #e8e5d9;
+    text-align: center;
+}
+
+.contact p {
+    line-height: 1.8;
+}
+
+.email {
+    margin-top: 20px;
+    color: #a45f4d;
+}
+
+.city {
+    color: #68746d;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #203b32;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    line-height: 2;
+    font-size: 14px;
+}
+
+
+/* MOBILE RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        text-align: center;
+        line-height: 2.5;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    .home {
+        padding: 75px 7%;
+    }
+
+    .home h1 {
+        font-size: 45px;
+    }
+
+    .home h3 {
+        font-size: 19px;
+    }
+
+    .section {
+        padding: 60px 7%;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .skills-container,
+    .hobby-container {
+        grid-template-columns: 1fr;
+    }
+
+}
